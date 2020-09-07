@@ -4,7 +4,7 @@ def find_item_by_name_in_collection(name, collection)
   # Consult README for inputs and outputs
   nope = nil
   collection.each do |i|
-    if name == i[:item]
+    if name == collection[i][:item]
       puts i
     else
       return nope
