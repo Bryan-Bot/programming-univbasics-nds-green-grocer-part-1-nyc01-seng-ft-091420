@@ -2,8 +2,13 @@ def find_item_by_name_in_collection(name, collection)
   # Implement me first!
   #
   # Consult README for inputs and outputs
+  nope = nil
   collection.each do |i|
-    
+    if name == i[:item]
+      i
+    else
+      return nope
+    end
   end
 end
 
